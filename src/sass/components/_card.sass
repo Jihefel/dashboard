@@ -1,0 +1,79 @@
+.container
+    width: 92%
+.cards
+    width: fit-content
+.Card
+    height: max-content
+.card
+    width: 220px
+    height: 220px
+    border-radius: 10px
+    font-family: "Arial"
+    color: #fff
+    display: grid
+    cursor: pointer
+    grid-template-rows: 50px 1fr
+    background-color: $primary-clr
+
+    img
+        float: right
+    .dot
+        width: 3px
+        height: 3px
+        border-radius: 50%
+        background: $dot-clr
+    .recent
+        line-height: 0
+        font-size: 0.8em
+.card-desc
+    border-radius: 10px
+    padding: 20px
+    position: relative
+    top: -10px
+    display: grid
+    gap: 10px
+    background: $primary-clr
+    height: fit-content
+    font-family: "Outfit"
+.card-time
+    font-size: 1.7em
+    font-weight: 500
+.img-section
+    border-top-left-radius: 10px
+    border-top-right-radius: 10px
+    padding-inline: 15px
+    position: relative
+.cardheader
+    display: flex
+    align-items: center
+    width: 100%
+    padding-inline: 0
+    padding-bottom: 8px
+.card-title
+    flex: 1
+    font-size: 0.9em
+    font-weight: 500
+    margin: 0
+.card-menu
+    display: flex
+    gap: 4px
+    margin-inline: auto
+
+.Work
+    background: hsl(15, 100%, 70%)
+
+.Play
+    background: hsl(195, 74%, 62%)
+
+.Study
+    background: hsl(348, 100%, 68%)
+
+.Exercise
+    background: hsl(145, 58%, 55%)
+
+.Social
+    background: hsl(264, 64%, 52%)
+
+.Self
+    background: hsl(43, 84%, 65%)
+
