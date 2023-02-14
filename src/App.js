@@ -14,13 +14,15 @@ import { useState } from "react";
 const images = [work, play, study, exercise, social, selfCare];
 
 function App() {
-  
+
   // State
   const [timeframe, setTimeframe] = useState("weekly");
+  const [timeState, setTimeState] = useState("Week");
 
   // Comportement
-  function handleTimeframe(time) {
-    setTimeframe(time);
+  function handleTimeframe(timeframe,time) {
+    setTimeframe(timeframe);
+    setTimeState(time)
   }
 
   // Render
@@ -39,7 +41,8 @@ function App() {
             <Card
               source={images[index]}
               nom={data.title}
-              time={timeframe}
+              timeframe={timeframe}
+              time={timeState}
               key={index}
               data={data}
             />

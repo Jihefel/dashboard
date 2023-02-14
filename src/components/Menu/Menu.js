@@ -1,6 +1,13 @@
 import { useState } from "react";
 
 export default function Menu(props) {
+
+  const [activeLink, setActiveLink] = useState(2);
+
+  const active = (id) => {
+    setActiveLink(id);
+  }
+
   // Render
   return (
     <div className="Card Menu">
@@ -15,17 +22,17 @@ export default function Menu(props) {
         <div className="card-desc">
           <ul>
             <li>
-              <a href="#" onClick={() => props.handleTimeframe("daily")}>
+              <a href="#" className={activeLink === 1 ? "active" : ""} onClick={() => {props.handleTimeframe("daily","Day"); active(1)}}>
                 Daily
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => props.handleTimeframe("weekly")}>
+              <a href="#" className={activeLink === 2 ? "active" : ""} onClick={(e) => {props.handleTimeframe("weekly","Week"); active(2)}}>
                 Weekly
               </a>
             </li>
             <li>
-              <a href="#" onClick={() => props.handleTimeframe("monthly")}>
+              <a href="#" className={activeLink === 3 ? "active" : ""} onClick={() => {props.handleTimeframe("monthly","Month"); active(3)}}>
                 Monthly
               </a>
             </li>
