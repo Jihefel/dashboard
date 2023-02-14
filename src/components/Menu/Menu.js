@@ -10,17 +10,19 @@ export default function Menu(props) {
 
   // Render
   return (
-    <div className="Card Menu">
+    <div className="Card Menu pt-3 pt-md-0">
       <div className="card">
-        <div className="img-section menu">
+        <div className="img-section menu d-flex align-items-center d-md-block gap-3 gap-md-0">
           <div className="img">
             <img src={props.avatar} alt="" />
           </div>
-          <small>Report for</small>
-          <h1>{props.name}</h1>
+          <div>
+            <small>Report for</small>
+            <h1>{props.name}</h1>
+          </div>
         </div>
         <div className="card-desc">
-          <ul>
+          <ul className="flex-row flex-md-column align-items-center py-4 py-md-0 align-items-md-start justify-content-around">
             <li>
               <a href="#" className={activeLink === 1 ? "active" : ""} onClick={() => {props.handleTimeframe("daily","Day"); active(1)}}>
                 Daily

@@ -28,15 +28,15 @@ function App() {
   // Render
   return (
     <div className="App">
-      <Container className="d-flex">
-        <div className="menu-cont me-3">
+      <Container className="d-flex flex-md-nowrap">
+        <div className="menu-cont me-md-3 mb-3 mb-md-0">
           <Menu
             avatar={avatar1}
             name={"Jeremy Robson"}
             handleTimeframe={handleTimeframe}
           />
         </div>
-        <div className="cards d-flex flex-wrap gap-3">
+        <div className="cards d-flex flex-wrap gap-2 gap-md-2 gap-xl-3">
           {datas.map((data, index) => (
             <Card
               source={images[index]}

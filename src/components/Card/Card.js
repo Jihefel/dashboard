@@ -1,7 +1,5 @@
-import datas from "../../assets/data/data.json";
 import Time from "../Time/Time";
 import ellipsis from "../../assets/images/icon-ellipsis.svg";
-import { useState } from "react";
 
 function Card(props) {
 
