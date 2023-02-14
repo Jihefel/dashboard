@@ -27,7 +27,7 @@ export default function Menu(props) {
               </a>
             </li>
             <li>
-              <a href="#" className={activeLink === 2 ? "active" : ""} onClick={(e) => {props.handleTimeframe("weekly","Week"); active(2)}}>
+              <a href="#" className={activeLink === 2 ? "active" : ""} onClick={() => {props.handleTimeframe("weekly","Week"); active(2)}}>
                 Weekly
               </a>
             </li>
